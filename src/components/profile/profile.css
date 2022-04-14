@@ -1,0 +1,42 @@
+.aboutMeCard {
+    width: 100%;
+    height: auto;
+}
+
+#aboutMe {
+    text-align: center;
+}
+
+#aboutMeContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 125px;
+}
+
+#aboutMeContainer div {
+    width: 45%;
+
+}
+
+.aboutMeText {
+    border: 3px solid #e18335;
+    background-color: #E4CC37;
+    border-radius: 25px;
+    padding: 15px
+}
+
+#headshot {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 25px;
+}
+@media screen and (max-width:500px) {
+    #aboutMeContainer div {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+}

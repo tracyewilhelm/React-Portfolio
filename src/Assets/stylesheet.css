@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  scroll-margin-top: 100px;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: slategray;
+}
+
+.headerbox {
+  top: 0;
+  left: 0;
+  padding-left: 10%;
+  flex-wrap: wrap;
+  float: left;
+  display: inline;
+  text-align: justify;
+  position: fixed;
+  color: aliceblue;
+  background-color: #2a607c;
+  /* margin: 1px; */
+  height: 105px;
+  width: 100%;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+header nav ul {
+  /* margin-top: -15px; */
+  /* display: block;
+  float: right;
+  justify-content: right;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px; */
+
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  text-decoration: underline;
+  font-size: small;
+  color: white;
+}
+
+header nav ul li {
+  display: inline;
+  float: right;
+  margin: 2px;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+  padding: 10px;
+  color: white;
+  /* border-right: 3px solid black; */
+}
+
+nav a {
+  font-size: 2em;
+  color: aliceblue;
+  margin-left: 10px;
+  text-decoration: none;
+  scroll-margin-top: -500px;
+}
+main {
+  margin-top: 150px;
+}
+
+.infoCard {
+  display: flexbox;
+  display: inline-block;
+  background-color: aliceblue;
+  flex-direction: column;
+  border: 10px solid black;
+  height: fit-content;
+  width: auto;
+  margin: 5%;
+  padding: 15px;
+}
+
+#headshot {
+  margin-right: 35px;
+  height: auto;
+  max-width: 100%;
+}
+p {
+  text-indent: 25px;
+}
+
+.portfolio-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 186px); */
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  background-color: #2196a3;
+}
+.grid-item {
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px 5px;
+  border: 1px solid darkslategray;
+  background-color: lightsteelblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#aboutMeImg {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherTracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#weatherTrackerImg {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
+
+.MtnMadness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MtnMadnessImg {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
+.JavaScriptQuiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#JSquiz {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
+.PantryChef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PChefImg {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  max-height: 150px;
+  max-width: 100%;
+}
