@@ -8,13 +8,15 @@ export default function Resume() {
       <div>
         <h2>Resume</h2>
       </div>
-      <div>
+      <div className="resumeBtnCard">
         {/* <img id="resume" src={resume} /> */}
-        <button class="downloadBtn">
-          <a href={resume} target="_blank" rel="noreferrer">
-            Download Resume
-          </a>
-        </button>
+        <div>
+          <button class="downloadBtn">
+            <a href={resume} target="_blank" rel="noreferrer">
+              Download Resume
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
