@@ -50,6 +50,11 @@ export default function Contact() {
                 rows="3"
               ></textarea>
             </div>
+            <div>
+              <button id="submitBtn" type="submit">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
         <div className="formCard">

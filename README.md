@@ -59,7 +59,7 @@ The following animation shows the web application's appearance and functionality
 
 ## Review
 
-Submiition of BOTH of the following for review:
+Submission of the following for review:
 
 - The URL of the functional, deployed application.
   https://tracye-wilhelm-portfolio-app.herokuapp.com/#contact
