@@ -25,6 +25,10 @@ li:hover{
     background-color: #E18335
 }
 
+li.nav-link{
+    background-color: blue;
+}
+
 .navItem {
     margin-right: 25px;
 
