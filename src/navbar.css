@@ -21,12 +21,8 @@ padding-right:  10px;
     color: #0072bb
 }
 
-li:hover{
+navbar li:hover{
     background-color: #E18335
-}
-
-li.nav-link{
-    background-color: blue;
 }
 
 .navItem {

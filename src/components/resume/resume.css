@@ -28,7 +28,17 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-.form-control {
-    margin-left: 5px;
+.skillCard {
+    /* border: solid black 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+.skillCard h4{
+    text-align: left;
+}
+
+.textBox {
+    list-style: inside;
+}

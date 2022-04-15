@@ -20,6 +20,9 @@
     justify-content: center;
 }
 
+li:hover {
+    background-color: #E18335
+}
 .footerItem {
     margin-right: 20px;
     margin-left: 20px;
