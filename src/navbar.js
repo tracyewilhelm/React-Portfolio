@@ -15,7 +15,7 @@ export default function NavigationBar({ currentPage, handlePageChange }) {
                 currentPage === "Profile" ? "nav-link active" : "nav-link"
               }
             >
-              Profile
+              About Me
             </a>
           </li>
           <li className="navItem">
@@ -56,30 +56,3 @@ export default function NavigationBar({ currentPage, handlePageChange }) {
     </div>
   );
 }
-
-// <div>
-//   <header className="navbar">
-//     <h1>Tracye Wilhelm</h1>
-
-//     <div className="aboutMe">
-//       <button className="btnAboutMe" onClick={Profile}>
-//         About Me
-//       </button>
-//     </div>
-//     <div className="contact">
-//       <button className="btnContact" onClick={Contact}>
-//         Contact
-//       </button>
-//     </div>
-//     <div className="portfolio">
-//       <button className="btnPortfolio" onClick={Portfolio}>
-//         Profile
-//       </button>
-//     </div>
-//     <div className="resume">
-//       <button className="btnResume" onClick={Resume}>
-//         Resume
-//       </button>
-//     </div>
-//   </header>
-// </div>

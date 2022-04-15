@@ -8,9 +8,9 @@ export default function Contact() {
     var email = e.target.value;
 
     if (validator.isEmail(email)) {
-      setEmailError("Valid Email :)");
+      setEmailError("Thank you for entering a valid email");
     } else {
-      setEmailError("Enter valid Email!");
+      setEmailError("Please enter a valid email!");
     }
   };
   return (

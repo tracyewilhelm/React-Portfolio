@@ -1,6 +1,7 @@
 .navBar {
 height: 100px;
 background-color: #8FC93A;
+color: #0072bb;
 top:0;
 left: 0;
 margin: 0;
@@ -17,7 +18,11 @@ padding-right:  10px;
 .navTabs {
     list-style: none;
     display: flex;
-    
+    color: #0072bb
+}
+
+li:hover{
+    background-color: #E18335
 }
 
 .navItem {

@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <>
       <section className="aboutMeCard">
-        <h2 id="aboutMe">about me</h2>
+        <h2 id="aboutMe">About Me</h2>
         <div id="aboutMeContainer">
           <div>
             <img

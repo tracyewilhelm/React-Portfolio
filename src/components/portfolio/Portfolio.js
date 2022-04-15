@@ -1,10 +1,11 @@
 import React from "react";
 import aboutMe from "../../Assets/aboutMe.jpg";
-import CSScheat from "../../Assets/CSS-Cheat.png";
+
 import JavaScriptQuiz from "../../Assets/JavaScriptQuiz.png";
 import MtnMadness from "../../Assets/MtnMadness.jpg";
 import PantryChefImg from "../../Assets/PantryChefImg.png";
 import weatherTracker from "../../Assets/weatherTracker.png";
+import dayPlanner from "../../Assets/DayPlanner.png";
 import "./portfolio.css";
 
 export default function Portfolio() {
@@ -116,6 +117,28 @@ export default function Portfolio() {
           </div>
         </div>
 
+        <div className="DayPlanner">
+          <div>
+            <a
+              href="https://tracyewilhelm.github.io/Daily-Planner/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img id="dayPlanner" src={dayPlanner} alt="Day planner title" />
+              <p>Work Day Scheduler</p>
+            </a>
+            <p>A simple calendar app that allows you to schedule your day.</p>
+            <p>
+              <a
+                href="https://github.com/tracyewilhelm/Daily-Planner"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Link: Daily-Planner
+              </a>
+            </p>
+          </div>
+        </div>
         <div className="PantryChef">
           <div>
             <a
