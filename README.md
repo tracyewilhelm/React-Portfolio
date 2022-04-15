@@ -62,6 +62,7 @@ The following animation shows the web application's appearance and functionality
 Submiition of BOTH of the following for review:
 
 - The URL of the functional, deployed application.
+  https://tracye-wilhelm-portfolio-app.herokuapp.com/#contact
 
 - The URL of the GitHub repository, with a unique name and a README that describes the project.
   https://github.com/tracyewilhelm/React-Portfolio
