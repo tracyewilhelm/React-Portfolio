@@ -27,6 +27,8 @@ background-color: #E4CC37;
     margin-left: 5px;
 }
 
-button {
-    margin-left: 40%
+.resumeBtnCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

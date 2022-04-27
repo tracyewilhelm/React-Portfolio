@@ -6,6 +6,7 @@ import MtnMadness from "../../Assets/MtnMadness.jpg";
 import PantryChefImg from "../../Assets/PantryChefImg.png";
 import weatherTracker from "../../Assets/weatherTracker.png";
 import dayPlanner from "../../Assets/DayPlanner.png";
+import CacheBandit from "../../Assets/CacheBandit.png";
 import "./portfolio.css";
 
 export default function Portfolio() {
@@ -168,10 +169,34 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-
-        {/* <div className="">Future Project</div>
-          <div className="">Future Project</div>
-          <div className="">Future Project</div> */}
+        <div className="CacheBandit">
+          <div>
+            <a
+              href="https://cache-bandit.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img id="CacheBandit" src={CacheBandit} alt="Cache Bandit Logo" />
+              <p>Cache Bandit</p>
+            </a>
+            <p>
+              A full-stack, mobile-first web app that allows a user to monitor
+              their monthly and annual subscriptions. Allows a user to enter
+              data about all of their subscriptions so they can see it all in
+              one location, including monthly cost, due date, and the ability to
+              edit or delete individual subscriptions.
+            </p>
+            <p>
+              <a
+                href="https://github.com/alexgeis/Subscription-Tracker"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Link: Cache Bandit
+              </a>
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
