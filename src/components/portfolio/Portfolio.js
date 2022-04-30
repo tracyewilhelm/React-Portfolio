@@ -122,6 +122,8 @@ export default function Portfolio() {
               </a>
             </p>
           </div>
+        </div>
+        <div>
           <div className="weatherTracker">
             <div>
               <a
