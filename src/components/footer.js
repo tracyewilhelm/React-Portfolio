@@ -5,10 +5,15 @@ import { BsMailbox } from "react-icons/bs";
 import { BsPhone } from "react-icons/bs";
 import "./footer.css";
 
-export default function Footer() {
+export default function Footer({ mode, toggleTheme }) {
   return (
-    <div className="footerInfoCard">
+    <div className={`footerInfoCard ${mode}`}>
       <ul className="footerTabs">
+        <li className="footerItem">
+          <button className={`btn-${mode}`} onClick={toggleTheme}>
+            Theme
+          </button>
+        </li>
         <li className="footerItem">
           <a href="tracye.wilhelm@gmail.com" target="_blank" rel="noreferrer">
             <BsMailbox />

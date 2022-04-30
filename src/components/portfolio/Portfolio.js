@@ -9,11 +9,11 @@ import dayPlanner from "../../Assets/DayPlanner.png";
 import CacheBandit from "../../Assets/CacheBandit.png";
 import "./portfolio.css";
 
-export default function Portfolio() {
+export default function Portfolio({ mode, toggleTheme }) {
   return (
-    <div className="portfolioContainer">
+    <div className={`portfolioContainer ${mode}`}>
       <h2 id="portfolio">Portfolio</h2>
-      <section className="infoCard">
+      <section className={`infoCard textCard-${mode}`}>
         <div className="aboutMe">
           <div>
             <a
@@ -60,6 +60,7 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
+
         <div className="PantryChef">
           <div>
             <a
@@ -122,6 +123,8 @@ export default function Portfolio() {
               </a>
             </p>
           </div>
+        </div>
+        <div>
           <div className="weatherTracker">
             <div>
               <a

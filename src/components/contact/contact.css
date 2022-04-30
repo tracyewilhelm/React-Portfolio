@@ -1,7 +1,8 @@
 .contactContainer {
     width: 100%;
-    height: auto;
-    margin-top: 125px;
+    height: 100%;
+    margin-top: 100px;
+    
 }
 
 .formCard {
@@ -10,9 +11,9 @@ flex-wrap: wrap;
 justify-content: space-evenly;
     
 }
-.contactCard h2{
+/* .contactCard h2{
     text-align: center;
-}
+} */
 
 .contact > div{
 width: 100%;
@@ -20,15 +21,11 @@ border-radius: 25px;
 padding: 15px;
 margin-bottom: 20px;
 border: 3px solid #e18335;
-background-color: #E4CC37;
+text-align: left;
+/* background-color: #E4CC37; */
 }
+
 
 .form-control {
     margin-left: 5px;
-}
-
-.resumeBtnCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }

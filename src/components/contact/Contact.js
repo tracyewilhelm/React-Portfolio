@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import validator from "validator";
 import "./contact.css";
 
-export default function Contact() {
+export default function Contact({ mode }) {
   const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
     var email = e.target.value;
@@ -14,11 +14,11 @@ export default function Contact() {
     }
   };
   return (
-    <div className="contactContainer">
+    <div className={`contactContainer ${mode}`}>
       <div className="contactCard">
         <h2 id="contactMe">Contact Me or Leave a Message</h2>
         <div className="formCard">
-          <form className="contact">
+          <form className={`contact textCard-${mode}`}>
             <div className="contact-form">
               <label for="name">Name</label>
               <input
@@ -65,7 +65,7 @@ export default function Contact() {
                   <b>Email:</b> tracye.wilhelm@gmail.com
                 </li>
                 <li>
-                  <b>GitHub:</b>
+                  <b>GitHub: </b>
                   <a
                     href="https://github.com/tracyewilhelm"
                     target="_blank"
@@ -75,7 +75,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <b>LinkedIn:</b>
+                  <b>LinkedIn: </b>
                   <a
                     href="https://www.linkedin.com/in/tracye-wilhelm-8b93212a"
                     target="_blank"

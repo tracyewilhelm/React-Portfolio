@@ -2,13 +2,16 @@ import React from "react";
 import "./resume.css";
 import resume from "./Resume-TracyeWilhelm.pdf";
 
-export default function Resume() {
+export default function Resume({ mode, toggleTheme }) {
   return (
-    <div className="resumeCard">
+    <div
+      className={`resumeCard ${mode}
+`}
+    >
       <div>
         <h2>Resume and Proficiencies</h2>
       </div>
-      <div className="resumeBtnCard">
+      <div className={`resumeBtnCard textCard-${mode}`}>
         {/* <img id="resume" src={resume} /> */}
         <div>
           <button className="downloadBtn">

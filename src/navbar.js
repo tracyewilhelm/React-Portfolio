@@ -1,13 +1,18 @@
 import React from "react";
 import "./navbar.css";
 
-export default function NavigationBar({ currentPage, handlePageChange }) {
+export default function NavigationBar({
+  currentPage,
+  handlePageChange,
+  mode,
+  toggleTheme,
+}) {
   return (
-    <div className="navBar">
+    <div className={`navBar navBar-${mode}`}>
       <h1>Tracye Wilhelm</h1>
       <div>
-        <ul className="navTabs">
-          <li className="navItem">
+        <ul className={`navTabs navTabs-${mode}`}>
+          <li className={`navItem navItem-${mode}`}>
             <a
               href="#profile"
               onClick={() => handlePageChange("Profile")}
@@ -18,7 +23,7 @@ export default function NavigationBar({ currentPage, handlePageChange }) {
               About Me
             </a>
           </li>
-          <li className="navItem">
+          <li className={`navItem navItem-${mode}`}>
             <a
               href="#contact"
               onClick={() => handlePageChange("Portfolio")}
@@ -29,7 +34,7 @@ export default function NavigationBar({ currentPage, handlePageChange }) {
               Portfolio
             </a>
           </li>
-          <li className="navItem">
+          <li className={`navItem navItem-${mode}`}>
             <a
               href="#resume"
               onClick={() => handlePageChange("Resume")}
@@ -40,7 +45,7 @@ export default function NavigationBar({ currentPage, handlePageChange }) {
               Resume
             </a>
           </li>
-          <li className="navItem">
+          <li className={`navItem navItem-${mode}`}>
             <a
               href="#contact"
               onClick={() => handlePageChange("Contact")}

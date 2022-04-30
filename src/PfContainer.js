@@ -6,20 +6,20 @@ import Contact from "./components/contact/Contact.js";
 import Resume from "./components/resume/Resume";
 import Footer from "./components/footer";
 
-export default function PortfolioContainer() {
+export default function PortfolioContainer({ mode, toggleTheme }) {
   const [currentPage, setCurrentPage] = useState("Profile");
 
   const renderPage = () => {
     if (currentPage === "Portfolio") {
-      return <Portfolio />;
+      return <Portfolio mode={mode} toggleTheme={toggleTheme} />;
     }
     if (currentPage === "Contact") {
-      return <Contact />;
+      return <Contact mode={mode} toggleTheme={toggleTheme} />;
     }
     if (currentPage === "Resume") {
-      return <Resume />;
+      return <Resume mode={mode} toggleTheme={toggleTheme} />;
     }
-    return <Profile />;
+    return <Profile mode={mode} toggleTheme={toggleTheme} />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -30,12 +30,14 @@ export default function PortfolioContainer() {
         <NavigationBar
           currentPage={currentPage}
           handlePageChange={handlePageChange}
+          mode={mode}
+          toggleTheme={toggleTheme}
         />
 
         {renderPage()}
       </div>
       <div>
-        <Footer />
+        <Footer mode={mode} toggleTheme={toggleTheme} />
       </div>
     </div>
   );

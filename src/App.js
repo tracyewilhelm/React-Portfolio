@@ -1,26 +1,29 @@
-// import logo from "./logo.svg";
 import "./App.css";
 import PortfolioContainer from "./PfContainer";
-import NavigationBar from "./navbar";
-import Footer from "./components/footer";
+import { useEffect, useState } from "react";
 
-const App = () => <PortfolioContainer />;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <div>
-//         <NavigationBar />
-//       </div>
-//       <div>
-//         {/* here is where I want to show the different "pages" */}
-//         <PfContainer />
-//       </div>
-//       <div>
-//         <Footer />
-//       </div>
-//     </div>
-//   );
-// }
-
+function App() {
+  const [mode, setMode] = useState("light");
+  const userMode = localStorage.getItem("mode");
+  if (!userMode) localStorage.setItem("mode", "light");
+  useEffect(() => {
+    setMode(userMode);
+  }, [userMode]);
+  const handleClick = (event) => {
+    if (userMode === "light") {
+      localStorage.setItem("mode", "dark");
+      setMode("dark");
+    } else {
+      localStorage.setItem("mode", "light");
+      setMode("light");
+    }
+  };
+  return (
+    <>
+      <div className={`App ${mode}-theme`}>
+        <PortfolioContainer mode={mode} toggleTheme={handleClick} />
+      </div>
+    </>
+  );
+}
 export default App;

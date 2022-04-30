@@ -1,10 +1,10 @@
 import React from "react";
 import "./profile.css";
 
-export default function Profile() {
+export default function Profile({ mode, toggleTheme }) {
   return (
     <>
-      <section className="aboutMeCard">
+      <section className={`aboutMeCard ${mode}`}>
         <h2 id="aboutMe">About Me</h2>
         <div id="aboutMeContainer">
           <div>
@@ -14,7 +14,7 @@ export default function Profile() {
               alt="Smiling woman with blonde hair, blue eyes, and purple sweater"
             />
           </div>
-          <div className="aboutMeText">
+          <div className={`aboutMeText aboutMeText-${mode}`}>
             <p>
               I am a Colorado Native that enjoys the great outdoors, playing
               with yarn, sports, and hanging with friends and family. I am the

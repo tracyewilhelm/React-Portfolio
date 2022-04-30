@@ -29,6 +29,11 @@
   color: #61dafb;
 }
 
+a:visited {
+  text-decoration: none;
+  color: #0072bb;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,4 +41,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.dark {
+background-color: #333;
+color: #1E91D6;
+
+}
+
+.light{
+background-color: #1E91D6;
+color: #333;
+}
+
+.btn-dark {
+  background-color: beige;
+  color: black;
+}
+.btn-light {
+  background-color: black;
+  color: beige;
+}
+
+.navBar-dark{
+background-color: #333;
+color: #8FC93A;
+border-bottom: #E18335 2px solid;
+}
+
+.navBar-light{
+  background-color: #8FC93A;
+  color: #0072bb;
+}
+.navItem-dark{
+background-color: #333;
+color: #8FC93A;
+}
+
+.navItem-light{
+  color: #0072bb;
+}
+
+.textCard-dark > div{
+background-color: #333;
+}
+
+.textCard-light > div{
+  background-color: #E4CC37;
+}
+.aboutMeText-dark {
+background-color: #333;
+}
+
+.aboutMeText-light {
+  background-color: #E4CC37;
 }
