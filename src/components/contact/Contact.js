@@ -18,7 +18,12 @@ export default function Contact({ mode }) {
       <div className="contactCard">
         <h2 id="contactMe">Contact Me or Leave a Message</h2>
         <div className="formCard">
-          <form className={`contact textCard-${mode}`}>
+          <form
+            className={`contact textCard-${mode}`}
+            action="mailto:tracye.wilhelm@gmail.com"
+            method="post"
+            encType="text/plain"
+          >
             <div className="contact-form">
               <label for="name">Name</label>
               <input
